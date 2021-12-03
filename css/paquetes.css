@@ -1,0 +1,71 @@
+.paquetes{
+    background-color: rgb(111, 111, 111);
+    text-align: center;
+    align-items: center;
+    background-image: url('../media/bg-paquetes.jpg');
+    background-position: center;
+    background-size: 100%;
+}
+.paquetes .paquete-titulo{
+    width: 100%;
+    height: 10%;
+}
+.paquetes .paquete-titulo h3{
+    font-size: 34px;
+    color: white;
+    font-family: 'Prata';
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.paquetes .cards{
+    display: block;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.paquetes .cards .card{
+    display: inline-block;
+    width: 26%; height: 95%;
+    background-color: rgba(0,0,0, 0.4); border: none;
+    margin: 15px 20px;
+    
+}
+
+.paquetes .cards .card:hover{
+    margin-top: 5px;
+    transition: all ease 0.4s;
+    box-shadow: rgba(192, 192, 192, 0.3) 0px 10px 10px;
+}
+
+.paquetes .card .card-cabeza , .paquetes .card .card-pie{
+    display: inline-block;
+    width: 90%; height: 15%;
+    margin: 0px 5%; padding: 5% 5px;
+    text-align: center;
+} 
+.paquetes .card-cabeza{ border-bottom: solid 1px silver;}
+.paquetes .card .card-pie{ padding: 0 5px;}
+
+.paquetes .cards .card .titulo, .paquetes .card .precio{
+    font-family: 'Raleway'; font-size: 24px; font-weight: bold;
+    color: orange;
+    text-transform: uppercase;
+}
+.paquetes .card .card-contenido{
+    width: 100%;
+    height: 75%;
+}
+
+.paquetes .card-contenido .contenido{
+    width: 100%; height: 100%; padding: 10px 0;
+    text-align: center;
+}
+
+.paquetes .card-contenido .contenido li{
+    text-decoration: none; list-style: none;
+    color: white; font-size: 17px; font-family: cursive;
+    margin: 5px 0;
+}

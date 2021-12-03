@@ -1,0 +1,114 @@
+/* ------------------------- */
+/* Estilos Generales */
+/* ------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body { 
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.texto-naranja {
+    font-weight: 300;
+    color: orange;
+}
+
+.texto-blanco {
+    font-weight: 700;
+    color: #fff;
+}
+
+.texto-negro {
+	color: #000;
+}
+
+/* ------------------------- */
+/* Contenedor para el icono de bajar a la siguiente pagina */
+.contenedor-icono{
+    position: absolute;
+    z-index: 99;
+    bottom: 3%;
+    left: 50%;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 60px;
+    animation: bajar-subir 1.6s ease infinite;
+}
+
+@keyframes bajar-subir {
+    0% { transform: translateY(24px); }
+    25% { transform: translateY(0);}
+    100% { transform: translateY(24px);}
+}
+
+
+/* ------------------------- */
+/* Estilos Menu de navegacion */
+.nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 70;
+    width: 100%;
+    margin: 0px; padding: 10px 20px;
+}
+
+.nav li, .nav a {
+    display: inline-block;
+    margin: 6px 6px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-size: 14px;
+    transition: .5s ease;
+    color: white;
+}
+
+.nav li.active{
+    border-bottom: 2px solid orange;
+}
+
+.nav li.active a{
+    color:orange;
+}
+
+.nav li a:hover{
+    color: rgba(255, 182, 45, 0.8);
+    transition: 0.2s;
+}
+
+    /* Inicio de los media queries */
+    @media screen and (max-width: 768px) {
+        /* Nav */
+         .nav li a ,
+         .nav li.active a{
+             font-size: 11px;
+             margin: 8px 1px;
+         }
+
+         .nav .logo {
+             display: none;
+         }
+
+         .nav{
+             padding: 10px 10px;
+         }
+         /* Paquetes */
+         .paquetes .pc{
+            display: none !important;
+         }
+
+         .paquetes .movil{
+            display: block !important; 
+        }
+    }

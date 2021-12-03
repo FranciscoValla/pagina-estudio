@@ -1,0 +1,109 @@
+.footer{
+    background-color: rgb(49, 49, 49);
+}
+
+.footer .titulo{
+    font-family: 'Raleway';
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.footer .contactos{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .contactos a {
+    display: flex;
+    width: 100px; height: 100px;
+    margin: 10px 25px;
+    background: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+.footer .contactos a:hover {
+    transform: scale(1.07, 1.07);
+    transition: ease all 0.35s;
+}  
+
+.footer .icono{
+    font-size: 55px;
+}
+
+.footer .Whatsapp i{
+    color: green;
+}
+.footer .facebook i{
+    color: blue;
+}
+.footer .youtube i{
+    color: red;
+}
+
+.footer .Whatsapp:hover{
+    background: green;
+}
+.footer .facebook:hover{
+    background: blue;
+}
+.footer .youtube:hover{
+    background: red;
+}
+
+.footer .Whatsapp:hover i{
+    color: white;
+    transition: ease all 0.35s;
+}
+.footer .facebook:hover i{
+    color: white;
+    transition: ease all 0.35s;
+}
+.footer .youtube:hover i{
+    color: white;
+    transition: ease all 0.35s;
+}
+
+/* **** Form **** */
+.footer .form {
+    width: 30%;
+    margin: 15px auto;
+    padding: 10px 30px;
+    border-radius: 6px;
+    border: solid 1px orange;
+}
+
+
+.footer .form .control{
+    display: inline-block;
+    width: 49.5%; padding: 0px;
+}
+
+.footer .form .texto-blanco {
+    font-size: 15px;
+    font-family: 'Raleway';
+}
+
+.footer .form .form-control, .footer .form .form-select{
+    font-size: 14px;
+    font-family: 'Raleway';
+    color: black;
+}
+
+.footer .form .btn{
+    font-family: 'Times New Roman';
+    color: orange;
+    width: 100%;
+    margin: 15px 0px;
+}
+
+.footer .form .ta{
+    width: 99.5%;
+}
+.footer .form .descripcion{
+    display: inline-block;
+    width: 100%;
+}
