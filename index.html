@@ -172,43 +172,54 @@
 		</section>
 
 <!-- --------------------- Seccion de contacto ----------------------- -->
-		<footer class="section footer">
-			<h2 class="texto-naranja titulo">Contactanos en nuestros medios oficiales</h2>
-			<div class="contactos">
-				<a href="#" class="Whatsapp icono"><i class="fab fa-whatsapp-square"></i></a>
-				<a href="#" class="facebook icono"><i class="fab fa-facebook-square"></i></a>
-				<a href="#" class="youtube icono"><i class="fab fa-youtube"></i></a>
+		<footer class="section contacto">
+			<div class="izquierda">
+				<img src="media/bg-form.jpg" alt="">
+				<form>
+					<h3 class="texto-naranja">Cotiza o solicita un evento</h3>
+					<div class="form-input">
+						<i class="fas fa-user"></i>
+						<input type="text" class="input" placeholder="Nombre completo">
+					</div>
+					<div class="form-input mitad">
+						<i class="fas fa-envelope"></i>
+						<input type="text" class="input" id="correo" placeholder="Correo electronico">
+					</div>
+					<div class="form-input mitad">
+						<i class="fas fa-phone-square"></i>
+						<input type="tel" class="input" placeholder="Numero de telefono">
+					</div>
+					<div class="form-input mitad">
+						<label for="fecha" class="texto">Fecha de evento</label>
+						<input type="date" class="input" id="fecha" placeholder="Fecha del evento">
+					</div>
+					<div class="form-input mitad">
+						<label for="evento" class="texto">Tipo de evento</label>
+						<select class="input" id="evento">
+							<option selected>Selecciona</option>
+							<option value="1">Boda</option>
+							<option value="2">Bautizo</option>
+							<option value="3">XV años</option>
+							<option value="3">Cumpleaños</option>
+							<option value="3">Sesion Familiar</option>
+							<option value="3">Publicidad</option>
+							</select>
+					</div>
+					<div class="form-input">
+						<label for="mensaje" class="texto">Mensaje</label>
+						<textarea cols="30" rows="3"></textarea>
+					</div>
+
+				</form>
 			</div>
-
-			<form class="form">
-				<div class="mb-3 control">
-				  <label for="correo" class="form-label texto-blanco">Correo Electronico:</label>
-				  <input type="email" class="form-control" id="correo" placeholder="ejemplo@ejemplo.com">
+			<div class="derecha">
+				<h2 class="texto-naranja titulo">Contactanos en nuestros medios oficiales</h2>
+				<div class="contactos">
+					<a href="#" class="Whatsapp icono"><i class="fab fa-whatsapp-square"></i></a>
+					<a href="https://www.facebook.com/alex.rosalesfotografia" class="facebook icono"><i class="fab fa-facebook-square"></i></a>
+					<a href="https://www.youtube.com/watch?v=rA4fdzVXKjQ" class="youtube icono"><i class="fab fa-youtube"></i></a>
 				</div>
-				<div class="mb-3 control">
-				  <label for="telefono" class="form-label texto-blanco">Numero Telefono:</label>
-				  <input type="tel" class="form-control" id="telefono" placeholder="7441800218">
-				</div>
-				<div class="mb-3 control">
-					<label for="presupuesto" class="form-label texto-blanco">Presupuesto:</label>
-					<input type="number" class="form-control" id="presupuesto">
-				</div>
-
-				<div class="control">
-					<label for="" class="form-label texto-blanco">Tipo de Evento:</label>
-					<select class="form-select" aria-label="Default select example">
-						<option selected></option>
-						<option value="1">Boda</option>
-						<option value="2">XV años</option>
-						<option value="3">Bautismo</option>
-				  	</select>
-				</div>
-				<div class="mb-3 ta">
-					<label for="textarea" class="form-label texto-blanco descripcion">Descripcion de tu evento:</label>
-					<textarea class="form-control" id="textarea" rows="3"></textarea>
-				  </div>
-				<button type="submit" class="btn btn-light">Enviar</button>
-			  </form>
+			</div>
 
 		</footer>
 	</main>

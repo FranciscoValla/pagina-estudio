@@ -37,7 +37,7 @@
 .paquetes .cards .card:hover{
     margin-top: 5px;
     transition: all ease 0.4s;
-    box-shadow: rgba(192, 192, 192, 0.3) 0px 10px 10px;
+    box-shadow: rgba(121, 120, 120, 0.3) 0px 10px 10px;
 }
 
 .paquetes .card .card-cabeza , .paquetes .card .card-pie{
