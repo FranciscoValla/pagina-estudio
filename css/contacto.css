@@ -2,20 +2,18 @@
     background-color: rgb(49, 49, 49);
 }
 
-.contacto .izquierda, .footer .derecha{
+.contacto .izquierda, .contacto .derecha{
+    display: flex;
     float: left;
     width: 50%; height: 100%;
-}
-
-.contacto img{
-    width: 100%;
-    margin-top: 4px;
+    margin: 0 0;
+    border: solid 1px black;
 }
 
 /* Aqui empieza el lado izquierdo ::: Aqui empieza el form */
 .contacto form{
     padding: 5% 5%;
-    margin: 6% 5%;
+    margin: 8% 5%;
     border-radius: 7px;
     box-shadow: rgba(255, 165, 0, 0.7) 0px 0px 20px;
 }
@@ -128,3 +126,42 @@
     color: white;
     transition: ease all 0.35s;
 }
+
+@media only screen and (max-width: 1180px) {
+    .contacto .izquierda, .contacto .derecha{
+        height: 40%; width: 100%;
+        margin: 0 0;
+    }
+    .contacto .izquierda{height: 60%;}
+    .contacto form{
+        padding: 2% 2%;
+        margin: 2% 5%; margin-top: 8%;
+        border-radius: 7px;
+        box-shadow: rgba(255, 165, 0, 0.7) 0px 0px 20px;
+    }
+
+    .contacto .titulo, .contacto .contactos{
+        float: left;
+        width: 100%;
+        height: 45%;
+        border: solid 1px black;
+    }
+    .contacto .titulo{
+        margin-top: 1%;
+    }
+    .contacto .titulo{
+        font-size: 34px;
+        margin-top: 5%;
+    }
+
+    .contacto .icono{
+        font-size: 48px;
+    }
+    .contacto .contactos a {
+        display: flex;
+        width: 80px; height: 80px;
+        margin: 10px 25px;
+    }
+    
+
+  }
